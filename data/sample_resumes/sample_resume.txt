@@ -1,0 +1,48 @@
+# Sample Resume - Software Engineer
+
+John Doe
+Software Engineer
+Email: john.doe@email.com | Phone: +1 234 567 8900
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+## PROFESSIONAL SUMMARY
+Experienced software engineer with 3+ years of experience in building scalable web applications.
+Proficient in Python, JavaScript, and cloud technologies. Passionate about machine learning and
+building innovative solutions.
+
+## SKILLS
+- Programming: Python (3 years), JavaScript (2 years), SQL (2 years), Java (1 year)
+- Frameworks: React (2 years), Node.js (1 year), Django (1 year)
+- Databases: PostgreSQL, MongoDB, Redis
+- Tools: Git, Docker, AWS, Jenkins
+- Machine Learning: TensorFlow, scikit-learn (1 year)
+
+## EXPERIENCE
+
+Software Engineer
+TechCorp Inc.
+Jan 2022 - Present
+- Developed REST APIs using Python and FastAPI
+- Implemented microservices architecture with Docker
+- Built frontend components with React and TypeScript
+- Deployed applications on AWS EC2 and S3
+
+Junior Developer
+StartupXYZ
+Jun 2020 - Dec 2021
+- Created web applications using Django and JavaScript
+- Designed database schemas for PostgreSQL
+- Collaborated with cross-functional teams using Agile
+
+## EDUCATION
+B.Tech in Computer Science
+ABC University, 2020
+GPA: 3.8/4.0
+
+## CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate (2023)
+- TensorFlow Developer Certificate (2022)
+
+## PROJECTS
+- E-commerce Platform: Full-stack application with React and Django
+- ML Image Classifier: CNN model for image classification using TensorFlow

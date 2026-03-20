@@ -1,0 +1,65 @@
+{
+  "programming_languages": [
+    {"name": "Python", "category": "programming_languages", "difficulty": "beginner", "dependencies": []},
+    {"name": "Java", "category": "programming_languages", "difficulty": "intermediate", "dependencies": []},
+    {"name": "JavaScript", "category": "programming_languages", "difficulty": "beginner", "dependencies": []},
+    {"name": "TypeScript", "category": "programming_languages", "difficulty": "intermediate", "dependencies": ["JavaScript"]},
+    {"name": "SQL", "category": "programming_languages", "difficulty": "intermediate", "dependencies": []},
+    {"name": "R", "category": "programming_languages", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Go", "category": "programming_languages", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Rust", "category": "programming_languages", "difficulty": "advanced", "dependencies": []}
+  ],
+  "frameworks_libraries": [
+    {"name": "React", "category": "frameworks_libraries", "difficulty": "intermediate", "dependencies": ["JavaScript", "HTML", "CSS"]},
+    {"name": "Angular", "category": "frameworks_libraries", "difficulty": "advanced", "dependencies": ["TypeScript", "JavaScript"]},
+    {"name": "Vue.js", "category": "frameworks_libraries", "difficulty": "intermediate", "dependencies": ["JavaScript"]},
+    {"name": "Node.js", "category": "frameworks_libraries", "difficulty": "intermediate", "dependencies": ["JavaScript"]},
+    {"name": "Django", "category": "frameworks_libraries", "difficulty": "intermediate", "dependencies": ["Python"]},
+    {"name": "Flask", "category": "frameworks_libraries", "difficulty": "beginner", "dependencies": ["Python"]},
+    {"name": "FastAPI", "category": "frameworks_libraries", "difficulty": "intermediate", "dependencies": ["Python"]},
+    {"name": "Spring Boot", "category": "frameworks_libraries", "difficulty": "advanced", "dependencies": ["Java"]}
+  ],
+  "databases": [
+    {"name": "PostgreSQL", "category": "databases", "difficulty": "intermediate", "dependencies": ["SQL"]},
+    {"name": "MongoDB", "category": "databases", "difficulty": "intermediate", "dependencies": []},
+    {"name": "MySQL", "category": "databases", "difficulty": "beginner", "dependencies": ["SQL"]},
+    {"name": "Redis", "category": "databases", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Elasticsearch", "category": "databases", "difficulty": "advanced", "dependencies": []},
+    {"name": "Cassandra", "category": "databases", "difficulty": "advanced", "dependencies": []}
+  ],
+  "ml_ai": [
+    {"name": "Machine Learning", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Python", "Statistics", "Linear Algebra"]},
+    {"name": "Deep Learning", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Machine Learning", "Python"]},
+    {"name": "TensorFlow", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Python", "Deep Learning"]},
+    {"name": "PyTorch", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Python", "Deep Learning"]},
+    {"name": "NLP", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Machine Learning", "Deep Learning"]},
+    {"name": "Computer Vision", "category": "ml_ai", "difficulty": "advanced", "dependencies": ["Deep Learning", "Python"]},
+    {"name": "Generative AI", "category": "ml_ai", "difficulty": "expert", "dependencies": ["Deep Learning", "NLP"]}
+  ],
+  "devops_tools": [
+    {"name": "Docker", "category": "devops_tools", "difficulty": "intermediate", "dependencies": ["Linux Basics"]},
+    {"name": "Kubernetes", "category": "devops_tools", "difficulty": "advanced", "dependencies": ["Docker", "Linux Basics"]},
+    {"name": "AWS", "category": "cloud_platforms", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Azure", "category": "cloud_platforms", "difficulty": "intermediate", "dependencies": []},
+    {"name": "GCP", "category": "cloud_platforms", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Terraform", "category": "devops_tools", "difficulty": "advanced", "dependencies": ["Cloud Platforms"]},
+    {"name": "Jenkins", "category": "devops_tools", "difficulty": "intermediate", "dependencies": []},
+    {"name": "GitHub Actions", "category": "devops_tools", "difficulty": "beginner", "dependencies": ["Git"]}
+  ],
+  "soft_skills": [
+    {"name": "Communication", "category": "soft_skills", "difficulty": "beginner", "dependencies": []},
+    {"name": "Leadership", "category": "soft_skills", "difficulty": "intermediate", "dependencies": ["Communication"]},
+    {"name": "Problem Solving", "category": "soft_skills", "difficulty": "intermediate", "dependencies": []},
+    {"name": "Teamwork", "category": "soft_skills", "difficulty": "beginner", "dependencies": ["Communication"]},
+    {"name": "Project Management", "category": "soft_skills", "difficulty": "intermediate", "dependencies": ["Communication"]},
+    {"name": "Critical Thinking", "category": "soft_skills", "difficulty": "intermediate", "dependencies": ["Problem Solving"]}
+  ],
+  "data_engineering": [
+    {"name": "Apache Spark", "category": "data_engineering", "difficulty": "advanced", "dependencies": ["Python", "Scala"]},
+    {"name": "Hadoop", "category": "data_engineering", "difficulty": "advanced", "dependencies": ["Java"]},
+    {"name": "Airflow", "category": "data_engineering", "difficulty": "intermediate", "dependencies": ["Python"]},
+    {"name": "Kafka", "category": "data_engineering", "difficulty": "advanced", "dependencies": ["Java", "Scala"]},
+    {"name": "Snowflake", "category": "databases", "difficulty": "intermediate", "dependencies": ["SQL"]},
+    {"name": "Databricks", "category": "data_engineering", "difficulty": "advanced", "dependencies": ["Spark", "Python"]}
+  ]
+}

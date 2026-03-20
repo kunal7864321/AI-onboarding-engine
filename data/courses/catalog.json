@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "id": "python-101",
+      "title": "Python for Everybody",
+      "provider": "Coursera",
+      "description": "Learn to Program and Analyze Data with Python",
+      "duration_hours": 32,
+      "difficulty_level": "beginner",
+      "skills_covered": ["Python", "Programming Basics"],
+      "prerequisites": [],
+      "is_free": true,
+      "url": "https://www.coursera.org/specializations/python"
+    },
+    {
+      "id": "python-adv",
+      "title": "Advanced Python Programming",
+      "provider": "Pluralsight",
+      "description": "Master advanced Python concepts and patterns",
+      "duration_hours": 18,
+      "difficulty_level": "advanced",
+      "skills_covered": ["Python"],
+      "prerequisites": ["Python for Everybody"],
+      "is_free": false,
+      "url": "https://www.pluralsight.com"
+    },
+    {
+      "id": "ml-stanford",
+      "title": "Machine Learning by Stanford",
+      "provider": "Coursera",
+      "description": "Comprehensive ML course by Andrew Ng",
+      "duration_hours": 60,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["Machine Learning", "Statistics"],
+      "prerequisites": ["Python", "Linear Algebra", "Statistics"],
+      "is_free": true,
+      "url": "https://www.coursera.org/learn/machine-learning"
+    },
+    {
+      "id": "dl-specialization",
+      "title": "Deep Learning Specialization",
+      "provider": "Coursera",
+      "description": "5-course series on Deep Learning",
+      "duration_hours": 80,
+      "difficulty_level": "advanced",
+      "skills_covered": ["Deep Learning", "Neural Networks", "TensorFlow"],
+      "prerequisites": ["Machine Learning", "Python"],
+      "is_free": false,
+      "url": "https://www.coursera.org/specializations/deep-learning"
+    },
+    {
+      "id": "react-complete",
+      "title": "React - The Complete Guide",
+      "provider": "Udemy",
+      "description": "Hooks, Redux, React Router, Next.js",
+      "duration_hours": 52,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["React", "JavaScript"],
+      "prerequisites": ["JavaScript", "HTML", "CSS"],
+      "is_free": false,
+      "url": "https://www.udemy.com/react-the-complete-guide/"
+    },
+    {
+      "id": "aws-architect",
+      "title": "AWS Certified Solutions Architect",
+      "provider": "A Cloud Guru",
+      "description": "Prepare for AWS certification",
+      "duration_hours": 45,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["AWS", "Cloud Architecture"],
+      "prerequisites": ["Networking Basics"],
+      "is_free": false,
+      "url": "https://acloudguru.com"
+    },
+    {
+      "id": "docker-mastery",
+      "title": "Docker Mastery",
+      "provider": "Udemy",
+      "description": "Docker, Docker Swarm, Kubernetes",
+      "duration_hours": 25,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["Docker", "Kubernetes"],
+      "prerequisites": ["Linux Basics"],
+      "is_free": false,
+      "url": "https://www.udemy.com/docker-mastery/"
+    },
+    {
+      "id": "sql-mysql",
+      "title": "SQL for Data Science",
+      "provider": "Coursera",
+      "description": "SQL for data analysis and retrieval",
+      "duration_hours": 20,
+      "difficulty_level": "beginner",
+      "skills_covered": ["SQL", "MySQL"],
+      "prerequisites": [],
+      "is_free": true,
+      "url": "https://www.coursera.org/learn/sql-for-data-science"
+    },
+    {
+      "id": "fastapi-modern",
+      "title": "Modern APIs with FastAPI",
+      "provider": "TestDriven.io",
+      "description": "Build high-performance APIs",
+      "duration_hours": 15,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["FastAPI", "Python"],
+      "prerequisites": ["Python"],
+      "is_free": false,
+      "url": "https://testdriven.io"
+    },
+    {
+      "id": "dsa-python",
+      "title": "Data Structures and Algorithms in Python",
+      "provider": "Udacity",
+      "description": "Master DSA with Python",
+      "duration_hours": 40,
+      "difficulty_level": "intermediate",
+      "skills_covered": ["Python", "Data Structures", "Algorithms"],
+      "prerequisites": ["Python Basics"],
+      "is_free": true,
+      "url": "https://www.udacity.com/course/data-structures-and-algorithms-in-python"
+    },
+    {
+      "id": "nlp-python",
+      "title": "Natural Language Processing with Python",
+      "provider": "DataCamp",
+      "description": "Hands-on NLP techniques",
+      "duration_hours": 35,
+      "difficulty_level": "advanced",
+      "skills_covered": ["NLP", "Python", "Text Processing"],
+      "prerequisites": ["Machine Learning", "Python"],
+      "is_free": false,
+      "url": "https://www.datacamp.com"
+    },
+    {
+      "id": "leadership-essentials",
+      "title": "Leadership Skills",
+      "provider": "LinkedIn Learning",
+      "description": "Develop essential leadership competencies",
+      "duration_hours": 8,
+      "difficulty_level": "beginner",
+      "skills_covered": ["Leadership", "Communication"],
+      "prerequisites": [],
+      "is_free": false,
+      "url": "https://www.linkedin.com/learning"
+    }
+  ]
+}

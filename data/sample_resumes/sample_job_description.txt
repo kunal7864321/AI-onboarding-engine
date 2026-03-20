@@ -1,0 +1,50 @@
+# Sample Job Description - Senior ML Engineer
+
+Company: AI Innovations Labs
+Position: Senior Machine Learning Engineer
+Location: Bangalore, India
+Type: Full-time
+
+## ABOUT US
+We are building cutting-edge AI solutions that transform industries. Join our team to work on
+challenging problems in machine learning, natural language processing, and computer vision.
+
+## RESPONSIBILITIES
+- Design and implement machine learning models for production systems
+- Work with large-scale data processing pipelines using Spark and Kafka
+- Develop deep learning solutions using TensorFlow and PyTorch
+- Collaborate with data scientists and engineers to deploy ML models
+- Optimize model performance and scalability
+- Mentor junior team members
+
+## REQUIREMENTS
+### Required Skills:
+- Strong programming skills in Python (4+ years)
+- Experience with machine learning algorithms and frameworks (TensorFlow, PyTorch)
+- Deep learning experience (CNNs, RNNs, Transformers)
+- SQL and database experience (PostgreSQL, MongoDB)
+- Cloud platforms (AWS or GCP)
+- Docker and Kubernetes for deployment
+- Version control with Git
+
+### Preferred Skills:
+- Experience with NLP and LLMs
+- Knowledge of MLOps practices
+- Experience with streaming technologies (Kafka, Flink)
+- Publications in ML/AI conferences
+
+### Education:
+- Bachelor's or Master's degree in Computer Science, Statistics, or related field
+- Strong mathematical foundation (Linear Algebra, Calculus, Statistics)
+
+## BENEFITS
+- Competitive salary and equity
+- Health and wellness benefits
+- Flexible work arrangements
+- Continuous learning opportunities
+- Access to latest AI research and tools
+
+## HOW TO APPLY
+Send your resume and portfolio to careers@aiinnovations.example.com
+
+Join us in building the future of AI!
