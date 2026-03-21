@@ -13,11 +13,11 @@ from app.schemas import (
     ChatRequest, ChatResponse
 )
 from app.services import AnalysisService
-from app.services.chatbot_service import ChatbotService
+# # from app.services.chatbot_service import ChatbotService
 
 router = APIRouter()
 analysis_service = AnalysisService()
-chatbot_service = ChatbotService()
+# # chatbot_service = ChatbotService()
 
 
 @router.post("/upload", response_model=UploadResponse)
@@ -264,51 +264,51 @@ async def health_check():
     return {"status": "healthy", "service": "AI-Adaptive Onboarding Engine"}
 
 
-@router.post("/chat/{session_id}", response_model=ChatResponse)
-async def chat_with_mentor(
-    session_id: str,
-    chat_request: ChatRequest,
-    db: Session = Depends(get_db)
-):
-    """
-    AI Chatbot - Conversational learning mentor
-    """
-    analysis = db.query(Analysis).filter(Analysis.session_id == session_id).first()
-    roadmap = db.query(Roadmap).filter(Roadmap.analysis_id == analysis.id).first() if analysis else None
-    
-    # Prepare analysis data
-    analysis_data = None
-    if analysis:
-        analysis_data = {
-            'skill_gaps': json.loads(analysis.skill_gaps or "[]"),
-            'strong_skills': analysis.strong_skills or [],
-            'weak_skills': analysis.weak_skills or [],
-            'user_skills': json.loads(analysis.user_skills or "[]")
-        }
-    
-    # Prepare roadmap data
-    roadmap_data = None
-    if roadmap:
-        learning_path = roadmap.learning_path
-        if isinstance(learning_path, str):
-            learning_path = json.loads(learning_path or "[]")
-        milestones = roadmap.milestones
-        if isinstance(milestones, str):
-            milestones = json.loads(milestones or "[]")
-        
-        roadmap_data = {
-            'learning_path': learning_path,
-            'milestones': milestones,
-            'estimated_total_hours': roadmap.estimated_total_hours,
-            'target_role': roadmap.target_role
-        }
-    
-    # Get chatbot response
-    response = chatbot_service.get_response(
-        user_message=chat_request.message,
-        session_id=session_id,
-        analysis_data=analysis_data,
-        roadmap_data=roadmap_data
-    )
-    
-    return response
+# # @router.post("/chat/{session_id}", response_model=ChatResponse)
+# # async def chat_with_mentor(
+# #     session_id: str,
+# #     chat_request: ChatRequest,
+# #     db: Session = Depends(get_db)
+# # ):
+# #     """
+# #     AI Chatbot - Conversational learning mentor
+# #     """
+# #     analysis = db.query(Analysis).filter(Analysis.session_id == session_id).first()
+# #     roadmap = db.query(Roadmap).filter(Roadmap.analysis_id == analysis.id).first() if analysis else None
+# #     
+# #     # Prepare analysis data
+# #     analysis_data = None
+# #     if analysis:
+# #         analysis_data = {
+# #             'skill_gaps': json.loads(analysis.skill_gaps or "[]"),
+# #             'strong_skills': analysis.strong_skills or [],
+# #             'weak_skills': analysis.weak_skills or [],
+# #             'user_skills': json.loads(analysis.user_skills or "[]")
+# #         }
+# #     
+# #     # Prepare roadmap data
+# #     roadmap_data = None
+# #     if roadmap:
+# #         learning_path = roadmap.learning_path
+# #         if isinstance(learning_path, str):
+# #             learning_path = json.loads(learning_path or "[]")
+# #         milestones = roadmap.milestones
+# #         if isinstance(milestones, str):
+# #             milestones = json.loads(milestones or "[]")
+# #         
+# #         roadmap_data = {
+# #             'learning_path': learning_path,
+# #             'milestones': milestones,
+# #             'estimated_total_hours': roadmap.estimated_total_hours,
+# #             'target_role': roadmap.target_role
+# #         }
+# #     
+# #     # Get chatbot response
+# #     response = chatbot_service.get_response(
+# #         user_message=chat_request.message,
+# #         session_id=session_id,
+# #         analysis_data=analysis_data,
+# #         roadmap_data=roadmap_data
+# #     )
+# #     
+# #     return response
