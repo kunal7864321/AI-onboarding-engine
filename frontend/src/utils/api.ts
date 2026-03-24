@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // @ts-ignore
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api/v1';
+const API_BASE_URL = "https://ai-onboarding-engine-2vye.onrender.com/api/v1";
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
