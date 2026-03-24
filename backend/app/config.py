@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     ROADMAP_RECOMPUTE_TRIGGER: float = 0.2
     
     # CORS
-    CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:5174")
+    CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "*")
     
     # Environment
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
