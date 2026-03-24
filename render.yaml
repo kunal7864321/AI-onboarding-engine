@@ -1,0 +1,31 @@
+services:
+  # Backend API
+  - type: web
+    name: ai-onboarding-api
+    env: python
+    region: ohio
+    buildCommand: "pip install -r requirements.txt && python -m spacy download en_core_web_sm"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:////data/onboarding.db
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: ai-onboarding-redis
+          property: connectionString
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: "*" # Change this to your Vercel frontend URL after deployment
+    disk:
+      name: sqlite-data
+      mountPath: /data
+      sizeGB: 1
+
+  # Redis Service
+  - type: redis
+    name: ai-onboarding-redis
+    region: ohio
+    plan: free
+    maxmemoryPolicy: allkeys-lru
