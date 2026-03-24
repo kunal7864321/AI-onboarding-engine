@@ -6,7 +6,7 @@ const API_BASE_URL = "https://ai-onboarding-engine-2vye.onrender.com/api/v1";
 export const api = axios.create({
   baseURL: API_BASE_URL,
   timeout: 30000,
-  withCredentials: true,
+  withCredentials: false,
 });
 
 export interface UploadResponse {
