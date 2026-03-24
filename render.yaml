@@ -9,20 +9,7 @@ services:
     envVars:
       - key: DATABASE_URL
         value: sqlite:///./onboarding.db
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: ai-onboarding-redis
-          property: connectionString
       - key: ENVIRONMENT
         value: production
       - key: CORS_ORIGINS
         value: "*" # Change this to your Vercel frontend URL after deployment
-
-  # Redis Service
-  - type: redis
-    name: ai-onboarding-redis
-    region: ohio
-    plan: free
-    maxmemoryPolicy: allkeys-lru
-    ipAllowList: []
