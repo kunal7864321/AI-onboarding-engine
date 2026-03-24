@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// @ts-ignore
 const API_BASE_URL = import.meta.env.VITE_API_URL || '/api/v1';
 
 export const api = axios.create({
